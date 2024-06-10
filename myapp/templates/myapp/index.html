@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case List</title>
+</head>
+<body>
+    <h1>Cases</h1>
+    <ul>
+        {% for case in cases %}
+            <li>{{ case.name }} - {{ case.summary }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
